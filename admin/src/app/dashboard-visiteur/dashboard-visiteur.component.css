@@ -1,0 +1,11 @@
+/* dashboard-visiteur.component.css */
+.plat-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .plat-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  

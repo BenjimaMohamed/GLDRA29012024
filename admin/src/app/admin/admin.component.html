@@ -1,0 +1,12 @@
+<!-- admin.component.html -->
+<div>
+  <h2>Liste des Visiteurs</h2>
+  <ul>
+    <li *ngFor="let visiteur of visiteurs">
+      <p>Nom d'utilisateur: {{ visiteur.username }}</p>
+      <p>Mot de passe: {{ visiteur.password }}</p>
+      <button (click)="validerVisiteur(visiteur)">Valider</button>
+      <button (click)="refuserVisiteur(visiteur)">Refuser</button>
+    </li>
+  </ul>
+</div>

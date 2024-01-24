@@ -1,0 +1,11 @@
+<!-- dashboard-visiteur.component.html -->
+<div>
+  <h2>Dashboard Visiteur</h2>
+  <p>Bienvenue sur le tableau de bord des visiteurs!</p>
+
+  <h3>Plats populaires :</h3>
+  <div *ngFor="let plat of plats" class="plat-container">
+    <img [src]="plat.image" alt="{{ plat.nom }} Image">
+    <p>{{ plat.nom }}</p>
+  </div>
+</div>
