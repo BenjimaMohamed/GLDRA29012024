@@ -1,0 +1,27 @@
+<!-- inscription.component.html -->
+
+<form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" formControlName="username">
+    <div *ngIf="inscriptionForm.get('username')?.hasError('required') && inscriptionForm.get('username')?.touched">
+      Le nom d'utilisateur est requis.
+    </div>
+    <div *ngIf="inscriptionForm.get('username')?.hasError('minlength') && inscriptionForm.get('username')?.touched">
+      Le nom d'utilisateur doit contenir au moins 3 caractères.
+    </div>
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password">
+    <div *ngIf="inscriptionForm.get('password')?.hasError('required') && inscriptionForm.get('password')?.touched">
+      Le mot de passe est requis.
+    </div>
+    <div *ngIf="inscriptionForm.get('password')?.hasError('minlength') && inscriptionForm.get('password')?.touched">
+      Le mot de passe doit contenir au moins 6 caractères.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="inscriptionForm.invalid">S'inscrire</button>
+</form>
