@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardVisiteurComponent } from './dashboard-visiteur/dashboard-visiteur.component';
 import { AdminComponent } from './admin/admin.component';
+import { RestautrantComponent } from './restautrant/restaurant.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AdminComponent } from './admin/admin.component';
     LoginComponent,
     DashboardVisiteurComponent,
     AdminComponent,
+    RestautrantComponent,
     
   ],
   imports: [

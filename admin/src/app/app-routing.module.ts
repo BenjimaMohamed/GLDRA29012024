@@ -4,12 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardVisiteurComponent } from './dashboard-visiteur/dashboard-visiteur.component';
 import { AdminComponent } from './admin/admin.component';
+import { RestautrantComponent } from './restautrant/restaurant.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirection par défaut vers le composant de connexion
   { path: 'login', component: LoginComponent },
   { path: 'dashboard-visiteur', component: DashboardVisiteurComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'restaurant', component: RestautrantComponent },
 
   // ... autres routes
 ];

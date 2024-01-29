@@ -1,5 +1,7 @@
 // dashboard-visiteur.component.ts
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 interface Plat {
   nom: string;
@@ -12,11 +14,12 @@ interface Plat {
   styleUrls: ['./dashboard-visiteur.component.css']
 })
 export class DashboardVisiteurComponent {
-  plats: Plat[] = [
-    { nom: 'Couscous', image: 'assets/images/Couscous.jpg' },
-    { nom: 'Tajine', image: 'assets/images/Tajine.jpg' },
-    { nom: 'Pastilla', image: 'assets/images/Bisteeya.jpg' },
-    { nom: 'Harira', image: 'assets/images/Harira.jpeg' },
-    { nom: 'Chbakia', image: 'assets/images/Chebakia.jpg' },
-  ];
+  constructor(private router: Router) { }
+
+  onCartButtonClick(): void {
+    // Ajoutez d'autres logiques si nécessaire
+
+    // Redirigez vers l'interface de connexion (login)
+    this.router.navigate(['/login']);
+}
 }
