@@ -7,11 +7,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirection par défaut vers le composant de connexion
-  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, // Redirection par défaut vers le composant de connexion
   { path: 'dashboard-visiteur', component: DashboardVisiteurComponent },
+  { path: 'login', component: LoginComponent },
+  
   { path: 'dashboard', component: DashboardComponent },
   { path: 'inscription', component: InscriptionComponent },
+
 
 
   // ... autres routes

@@ -10,6 +10,7 @@ export class InscriptionService {
   apiUrl = 'http://localhost:8090/insertion.php';
 
   constructor(private http: HttpClient) {}
+  
 
   inscription(data: any): Observable<any> {
     const httpOptions = {
@@ -35,5 +36,8 @@ export class InscriptionService {
         return throwError(errorMessage);
       })
     );
+ 
   }
+
+  
 }

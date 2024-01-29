@@ -41,5 +41,7 @@ export class LoginComponent {
       }
     );
   }
-
+  goToInscription() {
+    this.router.navigate(['/inscription']);
+  }
 }

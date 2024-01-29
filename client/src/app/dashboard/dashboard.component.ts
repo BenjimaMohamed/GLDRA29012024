@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
 
   ngOnInit(): void {
   }
+  onCartButtonClick(): void {
+    // Ajoutez d'autres logiques si nécessaire
+
+    // Redirigez vers l'interface de connexion (login)
+    this.router.navigate(['/login']);
+}
 
 }

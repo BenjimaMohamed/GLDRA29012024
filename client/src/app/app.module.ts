@@ -1,8 +1,7 @@
 // app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
-
-import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // Importez FormsModule ici
@@ -11,8 +10,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardVisiteurComponent } from './dashboard-visiteur/dashboard-visiteur.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
-
 import { InscriptionComponent } from './inscription/inscription.component';
 
 @NgModule({
@@ -21,15 +18,13 @@ import { InscriptionComponent } from './inscription/inscription.component';
     LoginComponent,
     DashboardVisiteurComponent,
     DashboardComponent,
-    InscriptionComponent
-
-     
+    InscriptionComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     HttpClientModule,
     FormsModule, // Ajoutez FormsModule ici
     // ... autres modules
